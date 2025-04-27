@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="1_bbocs"]
 [ext_resource type="Script" uid="uid://jakiopkvy2nv" path="res://Scripts/intro_scene.gd" id="1_lim1r"]
 [ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="2_lim1r"]
-[ext_resource type="Texture2D" uid="uid://ccewkmocxqb0i" path="res://art/anubis cane.png" id="3_m538q"]
+[ext_resource type="Texture2D" uid="uid://bns61espi7oqk" path="res://art/anubis cross.png" id="5_aqy4q"]
 
 [sub_resource type="Animation" id="Animation_bbocs"]
 resource_name = "Intro Scene"
@@ -64,11 +64,6 @@ modulate = Color(0.366595, 0.366595, 0.366595, 1)
 position = Vector2(4490, 305)
 texture = ExtResource("1_bbocs")
 
-[node name="AnubisCane" type="Sprite2D" parent="."]
-position = Vector2(315, 401)
-scale = Vector2(6.5075, 6.5075)
-texture = ExtResource("3_m538q")
-
 [node name="Anubis" type="Sprite2D" parent="."]
 position = Vector2(179, 352)
 scale = Vector2(1.20703, 1.20703)
@@ -88,3 +83,13 @@ text = "I'm SICK of this
 YOU DO IT!!!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AnubisCross" type="Sprite2D" parent="."]
+position = Vector2(1134.89, 319.587)
+scale = Vector2(0.277746, 6.44802)
+texture = ExtResource("5_aqy4q")
+
+[node name="AnubisCross" type="Sprite2D" parent="AnubisCross"]
+position = Vector2(4097.66, 1.14965)
+scale = Vector2(2.12425, 1.11185)
+texture = ExtResource("5_aqy4q")
