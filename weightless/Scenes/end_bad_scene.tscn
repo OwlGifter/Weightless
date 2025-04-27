@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://bbe3s6rynlol"]
+[gd_scene load_steps=8 format=3 uid="uid://bbe3s6rynlol"]
 
 [ext_resource type="Script" uid="uid://bc6cp3yq7q5wc" path="res://Scripts/end_bad_scene.gd" id="1_axonk"]
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="2_ngxrm"]
 [ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="3_6ep0g"]
 [ext_resource type="Texture2D" uid="uid://casy8hxhg4fni" path="res://art/ammit_128.png" id="4_6ep0g"]
+[ext_resource type="Texture2D" uid="uid://r0joso4fy8sn" path="res://background/words/i am back i expect.png" id="5_a7a1s"]
+[ext_resource type="Texture2D" uid="uid://bcd058pufomxc" path="res://art/AmmitEatHim.png" id="6_cx772"]
+[ext_resource type="Texture2D" uid="uid://bup4j2x7aoytb" path="res://art/Scrumptious.png" id="7_wcl2q"]
 
 [node name="End Bad Scene" type="Node2D"]
 script = ExtResource("1_axonk")
@@ -39,5 +42,20 @@ texture = ExtResource("3_6ep0g")
 flip_h = true
 
 [node name="Ammit128" type="Sprite2D" parent="."]
-position = Vector2(4003, 352)
+position = Vector2(3336, 350)
+scale = Vector2(1.64063, 1.64063)
 texture = ExtResource("4_6ep0g")
+
+[node name="IAmBackIExpect" type="Sprite2D" parent="."]
+position = Vector2(552, 147)
+scale = Vector2(0.38372, 0.322191)
+texture = ExtResource("5_a7a1s")
+
+[node name="AmmitEatHim" type="Sprite2D" parent="."]
+position = Vector2(2058, 113)
+scale = Vector2(0.711207, 0.711207)
+texture = ExtResource("6_cx772")
+
+[node name="Scrumptious" type="Sprite2D" parent="."]
+position = Vector2(3622, 113)
+texture = ExtResource("7_wcl2q")
