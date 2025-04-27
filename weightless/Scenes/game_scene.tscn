@@ -45,6 +45,10 @@ _data = {
 &"RESET": SubResource("Animation_fiftr")
 }
 
+[sub_resource type="Animation" id="Animation_w8jfd"]
+resource_name = "Gold0"
+length = 0.01
+
 [sub_resource type="Animation" id="Animation_7iton"]
 length = 0.001
 tracks/0/type = "value"
@@ -76,10 +80,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [0, 1, 2, 3, 4, 5, 6, 7]
 }
-
-[sub_resource type="Animation" id="Animation_w8jfd"]
-resource_name = "Gold0"
-length = 0.01
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ikfsv"]
 _data = {
@@ -189,9 +189,7 @@ libraries = {
 &"": SubResource("AnimationLibrary_1ixah")
 }
 
-
 [node name="Bad" type="Button" parent="Ammit"]
-
 offset_left = -279.434
 offset_top = 23.8557
 offset_right = -74.4343
@@ -221,7 +219,6 @@ root_node = NodePath("../..")
 libraries = {
 &"": SubResource("AnimationLibrary_uscyt")
 }
-
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 offset_left = 17.0166
@@ -294,14 +291,6 @@ offset_bottom = 80.0
 scale = Vector2(1.66727, 2.04832)
 text = "Good"
 
-[connection signal="animation_finished" from="Ammit/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
-[connection signal="pressed" from="Ammit/Bad" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Age?" to="." method="_on_age_pressed"]
-[connection signal="pressed" from="VBoxContainer/Cause of Death" to="." method="_on_cause_of_death_pressed"]
-[connection signal="pressed" from="VBoxContainer/Good Deeds" to="." method="_on_good_deeds_pressed"]
-[connection signal="pressed" from="VBoxContainer/Bad Deeds" to="." method="_on_bad_deeds_pressed"]
-[connection signal="pressed" from="Good" to="." method="_on_good_pressed"]
-
 [node name="Chalice" type="Sprite2D" parent="."]
 position = Vector2(760.24, 414.566)
 scale = Vector2(2.98729, 2.98729)
@@ -326,7 +315,10 @@ offset_bottom = 309.818
 text = "Gold +"
 
 [connection signal="animation_finished" from="Ammit/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
-[connection signal="pressed" from="Ammit/Ammit Chompa Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Ammit/Ammit Chompa Button" to="." method="_on_ammit_chompa_button_pressed"]
+[connection signal="pressed" from="Ammit/Bad" to="." method="_on_ammit_chompa_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Age?" to="." method="_on_age_pressed"]
+[connection signal="pressed" from="VBoxContainer/Cause of Death" to="." method="_on_cause_of_death_pressed"]
+[connection signal="pressed" from="VBoxContainer/Good Deeds" to="." method="_on_good_deeds_pressed"]
+[connection signal="pressed" from="VBoxContainer/Bad Deeds" to="." method="_on_bad_deeds_pressed"]
+[connection signal="pressed" from="Good" to="." method="_on_good_pressed"]
 [connection signal="pressed" from="Gold + Button" to="." method="_on_gold__button_pressed"]
-

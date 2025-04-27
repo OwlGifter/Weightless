@@ -108,10 +108,6 @@ func _on_gold__button_pressed() -> void:
 	update_cup()
 
 
-
-func _on_button_pressed() -> void:
-	questionsAvailable = 2
-
 func update_cup():
 	if stage == 0:
 		pass
@@ -123,7 +119,7 @@ func update_cup():
 		$Gold1.texture = preload("res://art/chalice_overlay_gold_5.png")
 
 func _on_ammit_chompa_button_pressed() -> void:
-
+	questionsAvailable = 2
 	animation.play("Bite Ammit")
 	if(CurrentSoul == 0):
 		guessedRight +=1
