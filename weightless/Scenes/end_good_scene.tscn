@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://x4h5uj61lxe3"]
+[gd_scene load_steps=8 format=3 uid="uid://x4h5uj61lxe3"]
 
 [ext_resource type="Script" uid="uid://ca4u6gtwlhaxo" path="res://Scripts/end_good_scene.gd" id="1_g02ks"]
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="2_hrl6e"]
+[ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="3_hrl6e"]
+[ext_resource type="Texture2D" uid="uid://r0joso4fy8sn" path="res://background/words/i am back i expect.png" id="4_vuca5"]
+[ext_resource type="Texture2D" uid="uid://chuxfocs8fb52" path="res://background/words/not bad kid.png" id="5_7ad35"]
+[ext_resource type="Texture2D" uid="uid://cansxdch3alpj" path="res://background/words/go on.png" id="6_8m700"]
+[ext_resource type="Texture2D" uid="uid://bfkljgolorpwr" path="res://art/portal.png" id="7_8m700"]
 
 [node name="End Good Scene" type="Node2D"]
 script = ExtResource("1_g02ks")
@@ -25,3 +30,50 @@ modulate = Color(0.797233, 0.667302, 0.509846, 1)
 position = Vector2(3720, 0)
 texture = ExtResource("2_hrl6e")
 centered = false
+
+[node name="Anubis" type="Sprite2D" parent="."]
+position = Vector2(1101, 350)
+scale = Vector2(1.02344, 1.02344)
+texture = ExtResource("3_hrl6e")
+flip_h = true
+
+[node name="Anubis" type="Sprite2D" parent="Anubis"]
+position = Vector2(1450.01, -17.5877)
+scale = Vector2(1.02344, 1.02344)
+texture = ExtResource("3_hrl6e")
+flip_h = true
+
+[node name="IAmBackIExpect" type="Sprite2D" parent="."]
+position = Vector2(1579, 204)
+scale = Vector2(0.38372, 0.322191)
+texture = ExtResource("4_vuca5")
+
+[node name="NotBadKid" type="Sprite2D" parent="."]
+position = Vector2(3046, 172)
+scale = Vector2(0.357429, 0.387613)
+texture = ExtResource("5_7ad35")
+
+[node name="GoOn" type="Sprite2D" parent="."]
+position = Vector2(4064, 351)
+texture = ExtResource("6_8m700")
+
+[node name="HyroglyphsBackground4" type="Sprite2D" parent="."]
+modulate = Color(0.797233, 0.667302, 0.509846, 1)
+position = Vector2(5580, 0)
+texture = ExtResource("2_hrl6e")
+centered = false
+
+[node name="Pixil-frame-0(2)" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(5595, 316)
+scale = Vector2(9.9484, 9.11963)
+texture = ExtResource("7_8m700")
+
+[node name="End Button" type="Button" parent="."]
+offset_left = 5578.0
+offset_top = 310.0
+offset_right = 5620.0
+offset_bottom = 341.0
+text = "END"
+
+[connection signal="pressed" from="End Button" to="." method="_on_end_button_pressed"]
