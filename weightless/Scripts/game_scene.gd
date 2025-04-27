@@ -9,7 +9,7 @@ extends Node2D
 # Chalice
 @onready var aniChalice = $ChaliceSurface/AnimationPlayer # pool on challice
 @onready var aniSoul = $Soul/AnimationPlayer2 # soul above chalice
-@onready var aniGold0 = $"Chalice/AnimationPlayer" # Make it Gray out
+
 
 #questions available
 var questionsAvailable = 2
@@ -94,18 +94,14 @@ var CurrentSoul = 0
 
 
 func _process(_delta: float):
+	# idle animations
 	aniChalice.play("Surface_Soul")
 	aniSoul.play("Soul")
-	pass
+
 	if($music.playing == false):
 		$music.play()
 	if not NoSoulRemaining():
 		BookAnswers.text = BookanswersAge[CurrentSoul]+','+BookanswersCauseOfDeath[CurrentSoul]+','+BookanswersGoodDeed[CurrentSoul]+','+BookanswersBadDeed[CurrentSoul]
-
-
-func _on_gold__button_pressed() -> void:
-	stage += 1
-	update_cup()
 
 
 func update_cup():
@@ -123,10 +119,16 @@ func _on_ammit_chompa_button_pressed() -> void:
 	animation.play("Bite Ammit")
 	if(CurrentSoul == 0):
 		guessedRight +=1
+		stage += 1
+		update_cup()
 	elif(CurrentSoul == 1):
 		guessedRight +=1
+		stage += 1
+		update_cup()
 	elif(CurrentSoul == 4):
 		guessedRight +=1
+		stage += 1
+		update_cup()
 	else:
 		guessedWrong +=1
 	CurrentSoul +=1
@@ -181,8 +183,12 @@ func _on_good_pressed() -> void:
 	questionsAvailable = 2
 	if(CurrentSoul == 2):
 		guessedRight +=1
+		stage += 1
+		update_cup()
 	elif(CurrentSoul == 3):
 		guessedRight +=1
+		stage += 1
+		update_cup()
 	else:
 		guessedWrong +=1
 	CurrentSoul +=1

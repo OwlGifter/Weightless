@@ -307,13 +307,6 @@ position = Vector2(759.74, 414)
 scale = Vector2(3.07709, 3.07709)
 texture = ExtResource("4_1ixah")
 
-[node name="Gold + Button" type="Button" parent="."]
-offset_left = 397.589
-offset_top = 278.818
-offset_right = 455.589
-offset_bottom = 309.818
-text = "Gold +"
-
 [connection signal="animation_finished" from="Ammit/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="pressed" from="Ammit/Bad" to="." method="_on_ammit_chompa_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Age?" to="." method="_on_age_pressed"]
@@ -321,4 +314,3 @@ text = "Gold +"
 [connection signal="pressed" from="VBoxContainer/Good Deeds" to="." method="_on_good_deeds_pressed"]
 [connection signal="pressed" from="VBoxContainer/Bad Deeds" to="." method="_on_bad_deeds_pressed"]
 [connection signal="pressed" from="Good" to="." method="_on_good_pressed"]
-[connection signal="pressed" from="Gold + Button" to="." method="_on_gold__button_pressed"]
