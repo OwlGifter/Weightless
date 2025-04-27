@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pvleau6d5mcm"
-valid=false
+uid="uid://bb3u7pqub2vl4"
+path="res://.godot/imported/black screen.png-e855e1bed0798896cf12af8272fd6909.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://Scenes/hyroglyphs_background.png"
+source_file="res://background/black screen.png"
+dest_files=["res://.godot/imported/black screen.png-e855e1bed0798896cf12af8272fd6909.ctex"]
 
 [params]
 

@@ -14,3 +14,6 @@ position = Vector2(-520, -47)
 scale = Vector2(1.56641, 1.56641)
 texture = ExtResource("2_lim1r")
 flip_h = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(582, 324)

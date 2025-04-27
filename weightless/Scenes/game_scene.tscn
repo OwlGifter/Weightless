@@ -1,3 +1,11 @@
-[gd_scene format=3 uid="uid://c7kdrp3csffr8"]
+[gd_scene load_steps=2 format=3 uid="uid://c7kdrp3csffr8"]
+
+[ext_resource type="Texture2D" uid="uid://bb3u7pqub2vl4" path="res://background/black screen.png" id="1_x87qo"]
 
 [node name="Game Scene" type="Node2D"]
+scale = Vector2(0.999026, 1)
+
+[node name="BlackScreen" type="Sprite2D" parent="."]
+scale = Vector2(0.973117, 0.842446)
+texture = ExtResource("1_x87qo")
+centered = false
