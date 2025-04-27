@@ -1,14 +1,21 @@
 extends Node2D
+# Ammit
 @onready var animation = $Ammit/AnimationPlayer
-@onready var aniChalice = $Chalice/ChaliceSurface/AnimationPlayer
-@onready var aniSoul = $Soul/AnimationPlayer2
+
 
 #text fields
 @onready var SoulResponse = $"Soul Response"
 @onready var BookAnswers = $"Book Answers"
+# Chalice
+@onready var aniChalice = $ChaliceSurface/AnimationPlayer # pool on challice
+@onready var aniSoul = $Soul/AnimationPlayer2 # soul above chalice
+@onready var aniGold0 = $"Chalice/AnimationPlayer" # Make it Gray out
 
 #questions available
 var questionsAvailable = 2
+
+# Chalice Gold Stages
+var stage = 0
 
 #wrong count
 var guessedWrong = 0
@@ -96,9 +103,27 @@ func _process(_delta: float):
 		BookAnswers.text = BookanswersAge[CurrentSoul]+','+BookanswersCauseOfDeath[CurrentSoul]+','+BookanswersGoodDeed[CurrentSoul]+','+BookanswersBadDeed[CurrentSoul]
 
 
+func _on_gold__button_pressed() -> void:
+	stage += 1
+	update_cup()
+
+
 
 func _on_button_pressed() -> void:
 	questionsAvailable = 2
+
+func update_cup():
+	if stage == 0:
+		pass
+	elif stage == 1:
+		$Gold1.texture = preload("res://art/chalice_overlay_gold_2.png")
+	elif stage == 2:
+		$Gold1.texture = preload("res://art/chalice_overlay_gold_4.png")
+	elif stage == 3:
+		$Gold1.texture = preload("res://art/chalice_overlay_gold_5.png")
+
+func _on_ammit_chompa_button_pressed() -> void:
+
 	animation.play("Bite Ammit")
 	if(CurrentSoul == 0):
 		guessedRight +=1
