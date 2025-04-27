@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://dmq8ce8dosyyh"]
+[gd_scene load_steps=3 format=3 uid="uid://dmq8ce8dosyyh"]
+
+[ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="1_bbocs"]
+[ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="2_lim1r"]
 
 [node name="Intro Scene" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.366595, 0.366595, 0.366595, 1)
+texture = ExtResource("1_bbocs")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-520, -47)
+scale = Vector2(1.56641, 1.56641)
+texture = ExtResource("2_lim1r")
+flip_h = true
