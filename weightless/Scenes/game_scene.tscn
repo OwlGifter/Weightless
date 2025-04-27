@@ -260,4 +260,4 @@ text = "Good"
 [connection signal="pressed" from="VBoxContainer/Cause of Death" to="." method="_on_cause_of_death_pressed"]
 [connection signal="pressed" from="VBoxContainer/Good Deeds" to="." method="_on_good_deeds_pressed"]
 [connection signal="pressed" from="VBoxContainer/Bad Deeds" to="." method="_on_bad_deeds_pressed"]
-[connection signal="pressed" from="Good" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Good" to="." method="_on_good_pressed"]
