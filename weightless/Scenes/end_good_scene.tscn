@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://x4h5uj61lxe3"]
+[gd_scene load_steps=9 format=3 uid="uid://x4h5uj61lxe3"]
 
 [ext_resource type="Script" uid="uid://ca4u6gtwlhaxo" path="res://Scripts/end_good_scene.gd" id="1_g02ks"]
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="2_hrl6e"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://chuxfocs8fb52" path="res://background/words/not bad kid.png" id="5_7ad35"]
 [ext_resource type="Texture2D" uid="uid://cansxdch3alpj" path="res://background/words/go on.png" id="6_8m700"]
 [ext_resource type="Texture2D" uid="uid://bfkljgolorpwr" path="res://art/portal.png" id="7_8m700"]
+[ext_resource type="AudioStream" uid="uid://cr6wdgq6iwhpr" path="res://Music/Happy music.mp3" id="8_7te17"]
 
 [node name="End Good Scene" type="Node2D"]
 script = ExtResource("1_g02ks")
@@ -75,5 +76,9 @@ offset_top = 310.0
 offset_right = 5620.0
 offset_bottom = 341.0
 text = "END"
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_7te17")
+max_distance = 8000.0
 
 [connection signal="pressed" from="End Button" to="." method="_on_end_button_pressed"]

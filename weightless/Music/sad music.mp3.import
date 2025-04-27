@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://duik0jpop23dx"
+path="res://.godot/imported/sad music.mp3-8da5bf062060eac279809eb0bf9e84cd.mp3str"
+
+[deps]
+
+source_file="res://Music/sad music.mp3"
+dest_files=["res://.godot/imported/sad music.mp3-8da5bf062060eac279809eb0bf9e84cd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

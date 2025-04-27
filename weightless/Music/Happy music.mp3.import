@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cr6wdgq6iwhpr"
+path="res://.godot/imported/Happy music.mp3-d320d00278d4ebe539e616e5c0780c3e.mp3str"
+
+[deps]
+
+source_file="res://Music/Happy music.mp3"
+dest_files=["res://.godot/imported/Happy music.mp3-d320d00278d4ebe539e616e5c0780c3e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
