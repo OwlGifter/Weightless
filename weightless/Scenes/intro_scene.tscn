@@ -99,10 +99,10 @@ scale = Vector2(5.49196, 6.86896)
 texture = ExtResource("6_ctf76")
 
 [node name="Begin" type="Button" parent="."]
-offset_left = 3244.0
-offset_top = 326.0
-offset_right = 3302.0
-offset_bottom = 357.0
+offset_left = 3230.0
+offset_top = 323.0
+offset_right = 3288.0
+offset_bottom = 354.0
 text = "ENTER"
 
 [connection signal="pressed" from="Begin" to="." method="_on_begin_pressed"]
