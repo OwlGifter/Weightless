@@ -6,20 +6,22 @@
 [node name="End Good Scene" type="Node2D"]
 script = ExtResource("1_g02ks")
 
+[node name="HyroglyphsBackground" type="Sprite2D" parent="."]
+modulate = Color(0.797233, 0.667302, 0.509846, 1)
+texture = ExtResource("2_hrl6e")
+centered = false
+
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 
-[node name="HyroglyphsBackground" type="Sprite2D" parent="."]
-modulate = Color(0.29219, 0.29219, 0.29219, 1)
-position = Vector2(951, 536)
-texture = ExtResource("2_hrl6e")
-
 [node name="HyroglyphsBackground2" type="Sprite2D" parent="."]
-modulate = Color(0.295867, 0.295866, 0.295866, 1)
-position = Vector2(2856, 530)
+modulate = Color(0.797233, 0.667302, 0.509846, 1)
+position = Vector2(1860, 0)
 texture = ExtResource("2_hrl6e")
+centered = false
 
 [node name="HyroglyphsBackground3" type="Sprite2D" parent="."]
-modulate = Color(0.295867, 0.295866, 0.295866, 1)
-position = Vector2(4744, 522)
+modulate = Color(0.797233, 0.667302, 0.509846, 1)
+position = Vector2(3720, 0)
 texture = ExtResource("2_hrl6e")
+centered = false

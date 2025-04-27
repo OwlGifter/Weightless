@@ -1,6 +1,6 @@
 extends Node2D
 
-var speed = 5
+var speed = 2
 
 func _process(delta):
 		var new_position = $Camera2D.position + Vector2(speed, 0)
