@@ -28,6 +28,6 @@ Art:<br/>
 
 
 
-Art/Animation - @jltrieu
-Programming/Animation @Francisco Roman
-Production/Organization/Programming @Zabdiel Hernandez
+Art/Animation - @jltrieu<br/>
+Programming/Animation @Francisco Roman<br/>
+Production/Organization/Programming @Zabdiel Hernandez<br/>
