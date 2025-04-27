@@ -8,11 +8,14 @@ var current_soul = null
 # @onready var goblet_sprite = animation for goblet
 
 func _process(delta: float):
-	pass
+	if($music.playing == false):
+		$music.play()
 
 func ready():
+	if($music.playing == false):
+		$music.play()
+	spawn_new_soul()
 	pass
-
 
 func spawn_new_soul():
 	pass
