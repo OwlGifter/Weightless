@@ -1,8 +1,12 @@
 extends Node2D
 @onready var animation = $Ammit/AnimationPlayer
+@onready var aniChalice = $Chalice/ChaliceSurface/AnimationPlayer
+@onready var aniSoul = $Soul/AnimationPlayer2
 
 
 func _process(delta: float):
+	aniChalice.play("Surface_Soul")
+	aniSoul.play("Soul")
 	pass
 	#if($music.playing == false):
 		#$music.play()
