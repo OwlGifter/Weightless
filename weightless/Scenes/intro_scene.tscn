@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dmq8ce8dosyyh"]
+[gd_scene load_steps=10 format=3 uid="uid://dmq8ce8dosyyh"]
 
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="1_bbocs"]
 [ext_resource type="Script" uid="uid://jakiopkvy2nv" path="res://Scripts/intro_scene.gd" id="1_lim1r"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://frfn5o8cgu8k" path="res://background/words/im sick of this.png" id="4_m538q"]
 [ext_resource type="Texture2D" uid="uid://cqdxhi5rhw2rg" path="res://background/words/mess it up.png" id="5_hq3du"]
 [ext_resource type="Texture2D" uid="uid://dvtborckcptuc" path="res://art/Black Portal.png" id="6_ctf76"]
-[ext_resource type="AudioStream" uid="uid://cqnluh6gupf35" path="res://Music/tragic music.mp3" id="7_ctf76"]
 
 [sub_resource type="Animation" id="Animation_bbocs"]
 resource_name = "Intro Scene"
@@ -105,10 +104,5 @@ offset_top = 323.0
 offset_right = 3288.0
 offset_bottom = 354.0
 text = "ENTER"
-
-[node name="music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("7_ctf76")
-max_distance = 8000.0
-attenuation = 0.1756
 
 [connection signal="pressed" from="Begin" to="." method="_on_begin_pressed"]
