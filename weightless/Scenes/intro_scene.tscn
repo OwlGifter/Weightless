@@ -45,6 +45,7 @@ _data = {
 }
 
 [node name="Intro Scene" type="Node2D"]
+position = Vector2(122, 0)
 script = ExtResource("1_lim1r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
