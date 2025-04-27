@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dmq8ce8dosyyh"]
+[gd_scene load_steps=10 format=3 uid="uid://dmq8ce8dosyyh"]
 
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="1_bbocs"]
 [ext_resource type="Script" uid="uid://jakiopkvy2nv" path="res://Scripts/intro_scene.gd" id="1_lim1r"]
 [ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="2_lim1r"]
-[ext_resource type="Texture2D" uid="uid://bns61espi7oqk" path="res://art/anubis cross.png" id="5_aqy4q"]
+[ext_resource type="Texture2D" uid="uid://frfn5o8cgu8k" path="res://background/words/im sick of this.png" id="4_m538q"]
+[ext_resource type="Texture2D" uid="uid://cqdxhi5rhw2rg" path="res://background/words/mess it up.png" id="5_hq3du"]
+[ext_resource type="Texture2D" uid="uid://dvtborckcptuc" path="res://art/Black Portal.png" id="6_ctf76"]
 
 [sub_resource type="Animation" id="Animation_bbocs"]
 resource_name = "Intro Scene"
@@ -70,26 +72,37 @@ scale = Vector2(1.20703, 1.20703)
 texture = ExtResource("2_lim1r")
 flip_h = true
 
+[node name="Anubis" type="Sprite2D" parent="Anubis"]
+position = Vector2(1081.17, -13.2557)
+scale = Vector2(0.989342, 1.02349)
+texture = ExtResource("2_lim1r")
+flip_h = true
+
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 
-[node name="Label" type="Label" parent="."]
-offset_left = 345.0
-offset_top = 76.0
-offset_right = 539.0
-offset_bottom = 188.0
-theme_type_variation = &"HeaderLarge"
-text = "I'm SICK of this
-YOU DO IT!!!"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="ImSickOfThis" type="Sprite2D" parent="."]
+position = Vector2(680, 204)
+scale = Vector2(0.519243, 0.502562)
+texture = ExtResource("4_m538q")
 
-[node name="AnubisCross" type="Sprite2D" parent="."]
-position = Vector2(1134.89, 319.587)
-scale = Vector2(0.277746, 6.44802)
-texture = ExtResource("5_aqy4q")
+[node name="MessItUp" type="Sprite2D" parent="."]
+position = Vector2(1999, 190)
+scale = Vector2(0.533763, 0.595208)
+texture = ExtResource("5_hq3du")
 
-[node name="AnubisCross" type="Sprite2D" parent="AnubisCross"]
-position = Vector2(4097.66, 1.14965)
-scale = Vector2(2.12425, 1.11185)
-texture = ExtResource("5_aqy4q")
+[node name="BlackPortal" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(3506, 305)
+scale = Vector2(6.83481, 7.88569)
+texture = ExtResource("6_ctf76")
+
+[node name="Begin" type="Button" parent="."]
+top_level = true
+offset_left = 3230.0
+offset_top = 300.0
+offset_right = 3288.0
+offset_bottom = 331.0
+text = "ENTER"
+
+[connection signal="pressed" from="Begin" to="." method="_on_begin_pressed"]
