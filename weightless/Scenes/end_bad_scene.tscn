@@ -67,7 +67,7 @@ offset_right = 3406.0
 offset_bottom = 397.0
 text = "QUIT"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_wcl2q")
 max_distance = 8000.0
 
