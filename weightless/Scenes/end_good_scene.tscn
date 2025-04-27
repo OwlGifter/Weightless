@@ -1,3 +1,25 @@
-[gd_scene format=3 uid="uid://x4h5uj61lxe3"]
+[gd_scene load_steps=3 format=3 uid="uid://x4h5uj61lxe3"]
+
+[ext_resource type="Script" uid="uid://ca4u6gtwlhaxo" path="res://Scripts/end_good_scene.gd" id="1_g02ks"]
+[ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="2_hrl6e"]
 
 [node name="End Good Scene" type="Node2D"]
+script = ExtResource("1_g02ks")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="HyroglyphsBackground" type="Sprite2D" parent="."]
+modulate = Color(0.29219, 0.29219, 0.29219, 1)
+position = Vector2(951, 536)
+texture = ExtResource("2_hrl6e")
+
+[node name="HyroglyphsBackground2" type="Sprite2D" parent="."]
+modulate = Color(0.295867, 0.295866, 0.295866, 1)
+position = Vector2(2856, 530)
+texture = ExtResource("2_hrl6e")
+
+[node name="HyroglyphsBackground3" type="Sprite2D" parent="."]
+modulate = Color(0.295867, 0.295866, 0.295866, 1)
+position = Vector2(4744, 522)
+texture = ExtResource("2_hrl6e")

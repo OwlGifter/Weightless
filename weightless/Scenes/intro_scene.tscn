@@ -58,4 +58,4 @@ texture = ExtResource("2_lim1r")
 flip_h = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(582, 324)
+anchor_mode = 0
