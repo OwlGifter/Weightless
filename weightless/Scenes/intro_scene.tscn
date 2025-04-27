@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dmq8ce8dosyyh"]
+[gd_scene load_steps=7 format=3 uid="uid://dmq8ce8dosyyh"]
 
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="1_bbocs"]
 [ext_resource type="Script" uid="uid://jakiopkvy2nv" path="res://Scripts/intro_scene.gd" id="1_lim1r"]
 [ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="2_lim1r"]
-[ext_resource type="Texture2D" uid="uid://bns61espi7oqk" path="res://art/anubis cross.png" id="5_aqy4q"]
 
 [sub_resource type="Animation" id="Animation_bbocs"]
 resource_name = "Intro Scene"
@@ -42,6 +41,7 @@ _data = {
 }
 
 [node name="Intro Scene" type="Node2D"]
+position = Vector2(122, 0)
 script = ExtResource("1_lim1r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -74,22 +74,13 @@ flip_h = true
 anchor_mode = 0
 
 [node name="Label" type="Label" parent="."]
-offset_left = 345.0
-offset_top = 76.0
-offset_right = 539.0
-offset_bottom = 188.0
+offset_left = 649.0
+offset_top = 93.0
+offset_right = 851.0
+offset_bottom = 205.0
 theme_type_variation = &"HeaderLarge"
 text = "I'm SICK of this
 YOU DO IT!!!"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnubisCross" type="Sprite2D" parent="."]
-position = Vector2(1134.89, 319.587)
-scale = Vector2(0.277746, 6.44802)
-texture = ExtResource("5_aqy4q")
-
-[node name="AnubisCross" type="Sprite2D" parent="AnubisCross"]
-position = Vector2(4097.66, 1.14965)
-scale = Vector2(2.12425, 1.11185)
-texture = ExtResource("5_aqy4q")
+metadata/_edit_use_anchors_ = true
