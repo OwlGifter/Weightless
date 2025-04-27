@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bbe3s6rynlol"]
+[gd_scene load_steps=5 format=3 uid="uid://bbe3s6rynlol"]
 
 [ext_resource type="Script" uid="uid://bc6cp3yq7q5wc" path="res://Scripts/end_bad_scene.gd" id="1_axonk"]
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="2_ngxrm"]
 [ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="3_6ep0g"]
+[ext_resource type="Texture2D" uid="uid://casy8hxhg4fni" path="res://art/ammit_128.png" id="4_6ep0g"]
 
 [node name="End Bad Scene" type="Node2D"]
 script = ExtResource("1_axonk")
@@ -20,12 +21,6 @@ modulate = Color(0.366595, 0.366595, 0.366595, 1)
 position = Vector2(2636, 304)
 texture = ExtResource("2_ngxrm")
 
-[node name="Anubis2" type="Sprite2D" parent="Hyroglyphs B2"]
-position = Vector2(535, -5)
-scale = Vector2(1.20703, 1.20703)
-texture = ExtResource("3_6ep0g")
-flip_h = true
-
 [node name="Hyroglyphs B3" type="Sprite2D" parent="."]
 modulate = Color(0.366595, 0.366595, 0.366595, 1)
 position = Vector2(4498, 304)
@@ -42,3 +37,7 @@ position = Vector2(179, 352)
 scale = Vector2(1.20703, 1.20703)
 texture = ExtResource("3_6ep0g")
 flip_h = true
+
+[node name="Ammit128" type="Sprite2D" parent="."]
+position = Vector2(4003, 352)
+texture = ExtResource("4_6ep0g")
