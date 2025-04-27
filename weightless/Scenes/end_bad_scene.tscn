@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://bbe3s6rynlol"]
+[gd_scene load_steps=2 format=3 uid="uid://bbe3s6rynlol"]
+
+[ext_resource type="Script" uid="uid://bc6cp3yq7q5wc" path="res://Scripts/end_bad_scene.gd" id="1_axonk"]
 
 [node name="End Bad Scene" type="Node2D"]
+script = ExtResource("1_axonk")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmq8ce8dosyyh"]
+[gd_scene load_steps=7 format=3 uid="uid://dmq8ce8dosyyh"]
 
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="1_bbocs"]
+[ext_resource type="Script" uid="uid://jakiopkvy2nv" path="res://Scripts/intro_scene.gd" id="1_lim1r"]
 [ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="2_lim1r"]
 
 [sub_resource type="Animation" id="Animation_bbocs"]
@@ -40,6 +41,7 @@ _data = {
 }
 
 [node name="Intro Scene" type="Node2D"]
+script = ExtResource("1_lim1r")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
