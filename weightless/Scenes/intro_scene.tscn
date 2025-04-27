@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dmq8ce8dosyyh"]
 
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="1_bbocs"]
-[ext_resource type="Script" uid="uid://jakiopkvy2nv" path="res://Scripts/intro_scene.gd" id="1_lim1r"]
+[ext_resource type="Script" path="res://Scripts/intro_scene.gd" id="1_lim1r"]
 [ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="2_lim1r"]
 
 [sub_resource type="Animation" id="Animation_bbocs"]
@@ -48,9 +48,19 @@ libraries = {
 &"": SubResource("AnimationLibrary_m538q")
 }
 
-[node name="Hyroglyphs background Dark" type="Sprite2D" parent="."]
+[node name="Hyroglyphs B1" type="Sprite2D" parent="."]
 modulate = Color(0.366595, 0.366595, 0.366595, 1)
 position = Vector2(802, 305)
+texture = ExtResource("1_bbocs")
+
+[node name="Hyroglyphs B2" type="Sprite2D" parent="."]
+modulate = Color(0.366595, 0.366595, 0.366595, 1)
+position = Vector2(2630, 305)
+texture = ExtResource("1_bbocs")
+
+[node name="Hyroglyphs B3" type="Sprite2D" parent="."]
+modulate = Color(0.366595, 0.366595, 0.366595, 1)
+position = Vector2(4490, 305)
 texture = ExtResource("1_bbocs")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
