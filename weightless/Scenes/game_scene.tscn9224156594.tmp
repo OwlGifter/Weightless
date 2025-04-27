@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c7kdrp3csffr8"]
+[gd_scene load_steps=22 format=3 uid="uid://c7kdrp3csffr8"]
 
 [ext_resource type="Script" uid="uid://bxcasdmofluos" path="res://Scripts/game_scene.gd" id="1_b6fju"]
 [ext_resource type="Texture2D" uid="uid://bb3u7pqub2vl4" path="res://background/black screen.png" id="1_x87qo"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://bcir411mrwjc5" path="res://Music/slow music.mp3" id="4_fiftr"]
 [ext_resource type="Texture2D" uid="uid://bapg1lc5rubgc" path="res://art/chalice_surface_soul_64.png" id="5_rgj8m"]
 [ext_resource type="Texture2D" uid="uid://km2mempiwnfp" path="res://art/soul_64.png" id="7_2fmhe"]
+[ext_resource type="Texture2D" uid="uid://bajw0vejh5rca" path="res://art/chalice_overlay_gold_2.png" id="8_7iton"]
 
 [sub_resource type="Animation" id="Animation_6h5vk"]
 resource_name = "Bite Ammit"
@@ -234,7 +235,7 @@ libraries = {
 [node name="Gold1" type="Sprite2D" parent="."]
 position = Vector2(759.74, 414)
 scale = Vector2(3.07709, 3.07709)
-texture = ExtResource("4_1ixah")
+texture = ExtResource("8_7iton")
 
 [node name="Gold + Button" type="Button" parent="."]
 offset_left = 397.589
