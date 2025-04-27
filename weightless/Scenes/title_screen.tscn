@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://d4fatkvegn4n1"]
+[gd_scene load_steps=5 format=3 uid="uid://d4fatkvegn4n1"]
 
 [ext_resource type="Script" uid="uid://dajineq4u6tw1" path="res://Scripts/title_screen.gd" id="1_klylv"]
+[ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="2_4gxqj"]
+[ext_resource type="Texture2D" uid="uid://ccewkmocxqb0i" path="res://art/anubis cane.png" id="3_twnyg"]
+[ext_resource type="Texture2D" uid="uid://bns61espi7oqk" path="res://art/anubis cross.png" id="4_twnyg"]
 
 [node name="Title Screen" type="Control"]
 layout_mode = 3
@@ -10,6 +13,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_klylv")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(0, 3)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_4gxqj")
+centered = false
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -35,6 +44,20 @@ text = "Play Game"
 [node name="Exit Game" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Exit"
+
+[node name="Anubis Cane" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(320, 390)
+rotation = 0.536327
+scale = Vector2(6.60464, 7.24286)
+texture = ExtResource("3_twnyg")
+
+[node name="AnubisCross" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(931, 327)
+rotation = -0.442233
+scale = Vector2(3.43059, 4.63475)
+texture = ExtResource("4_twnyg")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play Game" to="." method="_on_play_game_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Exit Game" to="." method="_on_exit_game_pressed"]
