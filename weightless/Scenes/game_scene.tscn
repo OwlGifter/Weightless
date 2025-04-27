@@ -1,12 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://c7kdrp3csffr8"]
+[gd_scene load_steps=8 format=3 uid="uid://c7kdrp3csffr8"]
 
 [ext_resource type="Script" uid="uid://bxcasdmofluos" path="res://Scripts/game_scene.gd" id="1_b6fju"]
 [ext_resource type="Texture2D" uid="uid://bb3u7pqub2vl4" path="res://background/black screen.png" id="1_x87qo"]
 [ext_resource type="Texture2D" uid="uid://casy8hxhg4fni" path="res://art/ammit_128.png" id="3_6h5vk"]
+[ext_resource type="AudioStream" uid="uid://bcir411mrwjc5" path="res://Music/slow music.mp3" id="4_fiftr"]
 
 [sub_resource type="Animation" id="Animation_6h5vk"]
 resource_name = "Bite Ammit"
 length = 0.9
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -14,10 +16,10 @@ tracks/0/path = NodePath(".:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 0]
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 }
 
 [sub_resource type="Animation" id="Animation_fiftr"]
@@ -51,7 +53,7 @@ texture = ExtResource("1_x87qo")
 centered = false
 
 [node name="Ammit" type="Sprite2D" parent="."]
-position = Vector2(973.949, 472)
+position = Vector2(927.904, 416)
 scale = Vector2(1.97018, 1.97018)
 texture = ExtResource("3_6h5vk")
 flip_h = true
@@ -62,14 +64,5 @@ libraries = {
 &"": SubResource("AnimationLibrary_1ixah")
 }
 
-[node name="Button" type="Button" parent="Ammit"]
-offset_left = -279.434
-offset_top = 23.8557
-offset_right = -74.4343
-offset_bottom = 54.8557
-text = "Ammit Chompa"
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-
-[connection signal="animation_finished" from="Ammit/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
-[connection signal="pressed" from="Ammit/Button" to="." method="_on_button_pressed"]
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_fiftr")
