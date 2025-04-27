@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dmq8ce8dosyyh"]
 
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="1_bbocs"]
-[ext_resource type="Script" path="res://Scripts/intro_scene.gd" id="1_lim1r"]
+[ext_resource type="Script" uid="uid://jakiopkvy2nv" path="res://Scripts/intro_scene.gd" id="1_lim1r"]
 [ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="2_lim1r"]
 
 [sub_resource type="Animation" id="Animation_bbocs"]
@@ -9,7 +9,7 @@ resource_name = "Intro Scene"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D2:position")
+tracks/0/path = NodePath("Anubis:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -24,7 +24,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D2:position")
+tracks/0/path = NodePath("Anubis:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -63,7 +63,7 @@ modulate = Color(0.366595, 0.366595, 0.366595, 1)
 position = Vector2(4490, 305)
 texture = ExtResource("1_bbocs")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Anubis" type="Sprite2D" parent="."]
 position = Vector2(179, 352)
 scale = Vector2(1.02344, 1.02344)
 texture = ExtResource("2_lim1r")
