@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://bkkxqnas2mugv" path="res://background/hyroglyphs background.png" id="2_ngxrm"]
 [ext_resource type="Texture2D" uid="uid://cltxot7c3xexb" path="res://art/TempAnubisIcon.png" id="3_6ep0g"]
 [ext_resource type="Texture2D" uid="uid://r0joso4fy8sn" path="res://background/words/i am back i expect.png" id="5_a7a1s"]
-[ext_resource type="Texture2D" uid="uid://bcd058pufomxc" path="res://art/AmmitEatHim.png" id="6_cx772"]
+[ext_resource type="Texture2D" uid="uid://bcd058pufomxc" path="res://background/words/AmmitEatHim.png" id="6_cx772"]
 [ext_resource type="Texture2D" uid="uid://8003s1my2aqa" path="res://art/Ammit End.png" id="7_cx772"]
-[ext_resource type="Texture2D" uid="uid://bup4j2x7aoytb" path="res://art/Scrumptious.png" id="7_wcl2q"]
+[ext_resource type="Texture2D" uid="uid://bup4j2x7aoytb" path="res://background/words/Scrumptious.png" id="7_wcl2q"]
 [ext_resource type="AudioStream" uid="uid://duik0jpop23dx" path="res://Music/sad music.mp3" id="8_wcl2q"]
 
 [node name="End Bad Scene" type="Node2D"]

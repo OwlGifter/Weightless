@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bup4j2x7aoytb"
-path="res://.godot/imported/Scrumptious.png-71f0c76a71935be59037a28edc9dadc2.ctex"
+path="res://.godot/imported/Scrumptious.png-20075b33f646ffcaa2513e6f22bcaaed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Scrumptious.png"
-dest_files=["res://.godot/imported/Scrumptious.png-71f0c76a71935be59037a28edc9dadc2.ctex"]
+source_file="res://background/words/Scrumptious.png"
+dest_files=["res://.godot/imported/Scrumptious.png-20075b33f646ffcaa2513e6f22bcaaed.ctex"]
 
 [params]
 

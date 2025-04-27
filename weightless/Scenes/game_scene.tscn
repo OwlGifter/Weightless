@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://blh70fnbxntak"]
+[gd_scene load_steps=13 format=3 uid="uid://blh70fnbxntak"]
 
 [ext_resource type="Script" uid="uid://bxcasdmofluos" path="res://Scripts/game_scene.gd" id="1_b6fju"]
 [ext_resource type="Texture2D" uid="uid://bb3u7pqub2vl4" path="res://background/black screen.png" id="1_x87qo"]
 [ext_resource type="Texture2D" uid="uid://casy8hxhg4fni" path="res://art/ammit_128.png" id="3_6h5vk"]
+[ext_resource type="Texture2D" uid="uid://brswuetxs8aac" path="res://art/chalice.png" id="4_1ixah"]
 [ext_resource type="AudioStream" uid="uid://bcir411mrwjc5" path="res://Music/slow music.mp3" id="4_fiftr"]
+[ext_resource type="Texture2D" uid="uid://bapg1lc5rubgc" path="res://art/chalice_surface_soul_64.png" id="5_rgj8m"]
 
 [sub_resource type="Animation" id="Animation_6h5vk"]
 resource_name = "Bite Ammit"
@@ -42,6 +44,44 @@ _data = {
 &"RESET": SubResource("Animation_fiftr")
 }
 
+[sub_resource type="Animation" id="Animation_2fmhe"]
+resource_name = "Surface_Soul"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Chalice/ChaliceSurface:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_7iton"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Chalice/ChaliceSurface:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ikfsv"]
+_data = {
+&"RESET": SubResource("Animation_7iton"),
+&"Surface_Soul": SubResource("Animation_2fmhe")
+}
+
 [node name="Game Scene" type="Node2D"]
 scale = Vector2(0.999026, 1)
 script = ExtResource("1_b6fju")
@@ -70,9 +110,25 @@ offset_right = -74.4343
 offset_bottom = 54.8557
 text = "Ammit Chompa"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Chalice" type="Sprite2D" parent="."]
+position = Vector2(762.227, 412.579)
+scale = Vector2(3.04936, 3.04936)
+texture = ExtResource("4_1ixah")
+
+[node name="ChaliceSurface" type="Sprite2D" parent="Chalice"]
+position = Vector2(1.52588e-05, -1.63969)
+scale = Vector2(0.927031, 0.927031)
+texture = ExtResource("5_rgj8m")
+hframes = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Chalice/ChaliceSurface"]
+root_node = NodePath("../../..")
+libraries = {
+&"": SubResource("AnimationLibrary_ikfsv")
+}
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
+visible = false
 stream = ExtResource("4_fiftr")
 
 [connection signal="animation_finished" from="Ammit/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

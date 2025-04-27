@@ -3,8 +3,9 @@ extends Node2D
 
 
 func _process(delta: float):
-	if($music.playing == false):
-		$music.play()
+	pass
+	#if($music.playing == false):
+		#$music.play()
 
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcd058pufomxc"
-path="res://.godot/imported/AmmitEatHim.png-da0e5b374fdf11c9ff75312e9bdbcf1e.ctex"
+path="res://.godot/imported/AmmitEatHim.png-856aa369d5f49a910febeb0a1a152a34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/AmmitEatHim.png"
-dest_files=["res://.godot/imported/AmmitEatHim.png-da0e5b374fdf11c9ff75312e9bdbcf1e.ctex"]
+source_file="res://background/words/AmmitEatHim.png"
+dest_files=["res://.godot/imported/AmmitEatHim.png-856aa369d5f49a910febeb0a1a152a34.ctex"]
 
 [params]
 
