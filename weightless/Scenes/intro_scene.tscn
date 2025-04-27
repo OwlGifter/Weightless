@@ -108,5 +108,6 @@ text = "ENTER"
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_ctf76")
+max_distance = 8000.0
 
 [connection signal="pressed" from="Begin" to="." method="_on_begin_pressed"]
